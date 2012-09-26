@@ -16,5 +16,5 @@
         <script src="/assets/js/lib/jquery-1.8.2.min.js"></script>
         <script src="/assets/js/lib/modernizr-2.6.2.min.js"></script>        
         <script src="/assets/js/lib/plugins.js"></script>
-        <script src="/assets/js/lib/jquery.load.js"></script>
+        <script src="/assets/js/lib/jquery-1.0.load.js"></script>
         <script src="/assets/js/main.js"></script>
