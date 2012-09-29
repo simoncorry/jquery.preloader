@@ -30,50 +30,46 @@
               
     -->
     <head>
-        <title>*** TITLE ***</title>
+        <title>jQuery Preloader | Moomba Plugins</title>
         <meta charset="utf-8" />
         <meta name="robots" content="all">
-        <meta name="description" content="*** DESCRIPTION ***"/>
-        <meta name="keywords" content="*** KEYWORDS ***"/>
+        <meta name="description" content="jQuery Preloader is a stylish way to hide content on a page and then display it after loading is completed."/>
+        <meta name="keywords" content="jquery preloader, jquery preloaders, javascript preloader, css preloader, css3 preloader, html5 preloader, preload content, preload page, moomba plugins, simon corry"/>
                 
         <!-- /// VIEWPORT /// -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <?php /* FACEBOOK OG */ include_once("/plugins/load/assets/includes/facebook-open-graph.php"); ?>
-        <?php /* GOOGLE PLUS SNIPPET */ include_once("/plugins/load/assets/includes/google-snippet.php"); ?>
         
         <!-- /// ICONS /// -->
-        <link rel="icon" type="image/x-icon" href="/assets/images/lib/icons/favicon.ico" />
-        <link rel="shortcut icon" type="image/x-icon" href="/assets/images/lib/icons/favicon.ico" />
-        <link rel="apple-touch-icon-precomposed" href="/assets/images/lib/icons/lib/icons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/lib/icons/apple-touch-icon-72x72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/lib/icons/apple-touch-icon-114x114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/lib/icons/apple-touch-icon-144x144-precomposed.png">
+        <link rel="icon" type="image/x-icon" href="assets/images/lib/icons/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/lib/icons/favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" href="assets/images/lib/icons/lib/icons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/lib/icons/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/lib/icons/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/lib/icons/apple-touch-icon-144x144-precomposed.png">
         
-        <!-- /// CSS /// -->
-        <link type="text/css" rel="stylesheet" href="/assets/css/lib/normalize.css" />  
-        <link type="text/css" rel="stylesheet" href="/assets/css/lib/load.css" />
-        <link type="text/css" rel="stylesheet" href="/assets/css/main.css" />    
-        
-        <!-- /// JS /// -->
-        <script src="/assets/js/lib/jquery-1.8.2.min.js"></script>
-        <script src="/assets/js/lib/modernizr-2.6.2.min.js"></script>        
-        <script src="/assets/js/lib/plugins.js"></script>
-        <script src="/assets/js/lib/jquery-1.0.load.js"></script>
-        <script src="/assets/js/main.js"></script>
-        
-        <!-- /// EXAMPLE STYLES /// -->
+        <!-- /// EXAMPLE PAGE STYLES /// -->
         <style type="text/css">
-            .example {
-                background:url(/assets/images/load/bg-default.jpg); 
-                background-size:cover !important; 
-                width:100%; 
+            html,
+            body {
+                background:rgb(246,246,246); /* Recommended default */
+                margin:0;
+                width:100%;
                 height:100%;
             }
-        </style>
+            .example {
+                background:red url(../../assets/images/example/bg-default.jpg); 
+                background-size:cover !important; 
+                width:100%;
+                height:100%;
+            }
+        </style>    
         
-        <!-- /// LOAD /// -->
+        <!-- /// PLUGIN /// -->
+        <link type="text/css" rel="stylesheet" href="assets/css/lib/jquery.preloader-1.0.css" />
+        <script type="text/javascript" src="assets/js/lib/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="assets/js/lib/jquery.preloader-1.0.js"></script>             
         <script>
           $(function() {
             $('#your_plugin').load({
