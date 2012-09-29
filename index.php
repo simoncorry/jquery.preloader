@@ -33,7 +33,7 @@
         <title>jQuery Preloader | Moomba Plugins</title>
         <meta charset="utf-8" />
         <meta name="robots" content="all">
-        <meta name="description" content="jQuery Preloader is a stylish way to hide content on a page and then display it after loading is completed."/>
+        <meta name="description" content="jQuery Preloader, a stylish way to hide content while your page loads."/>
         <meta name="keywords" content="jquery preloader, jquery preloaders, javascript preloader, css preloader, css3 preloader, html5 preloader, preload content, preload page, moomba plugins, simon corry"/>
                 
         <!-- /// VIEWPORT /// -->
@@ -59,7 +59,7 @@
                 height:100%;
             }
             .example {
-                background:red url(../../assets/images/example/bg-default.jpg); 
+                background:red url(assets/images/example/bg-default.jpg); 
                 background-size:cover !important; 
                 width:100%;
                 height:100%;
@@ -72,7 +72,7 @@
         <script type="text/javascript" src="assets/js/lib/jquery.preloader-1.0.js"></script>             
         <script>
           $(function() {
-            $('#your_plugin').load({
+            $('#your_plugin').moombaPreloader({
               type      : '1',                /* Rectangle(1), Circle(2) */
               box_color : 'rgb(254,254,254)', /* Outer shell         - CSS color values */
               bar_color : 'rgb(204,102,51)' , /* Animated properties - CSS color values */

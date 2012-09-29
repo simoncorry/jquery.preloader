@@ -1,13 +1,13 @@
 /*
  *
- * NAME         : LOAD
- * INSTRUCTIONS : http://labs.simoncorry.com/plugins/load
- * GITHUB REPO  : https://github.com/simoncorry/jquery.load
+ * NAME         : Moomba Preloader
+ * INSTRUCTIONS : http://labs.simoncorry.com/plugins/preloader
+ * GITHUB REPO  : https://github.com/simoncorry/jquery.preloader
  * AUTHORED BY  : Simon Corry, http://simoncorry.com
  * VERSION      : 1.0
- * UPDATED      : September 27th, 2012
+ * UPDATED      : September 29th, 2012
  *
- * Load is a preloader plugin for jQuery. Please feel free to email me
+ * Moomba Preloader is a plugin for jQuery. Please feel free to email
  * questions or use case examples to labs@simoncorry.com.
  * 
  * Permission is hereby granted, free of charge, to any person obtaining
@@ -98,7 +98,7 @@
   }; 
   
   // Call Plugin Methods 
-  $.fn.load = function(method) {       
+  $.fn.moombaPreloader = function(method) {       
     if (methods[method]) {
       return methods[method].apply(this,Array.prototype.slice.call(arguments,1));        
     } else if (typeof method === 'object' || ! method) {
