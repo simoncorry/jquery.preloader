@@ -30,10 +30,10 @@
               
     -->
     <head>
-        <title>jQuery Preloader | Moomba Plugins</title>
+        <title>Moomba Preloader | jQuery Plugin</title>
         <meta charset="utf-8" />
         <meta name="robots" content="all">
-        <meta name="description" content="jQuery Preloader, a stylish way to hide content while your page loads."/>
+        <meta name="description" content="Moomba Preloader is a stylish jQuery plugin that allows you to hide content while your page loads."/>
         <meta name="keywords" content="jquery preloader, jquery preloaders, javascript preloader, css preloader, css3 preloader, html5 preloader, preload content, preload page, moomba plugins, simon corry"/>
                 
         <!-- /// VIEWPORT /// -->
