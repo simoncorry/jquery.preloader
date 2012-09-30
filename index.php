@@ -34,7 +34,7 @@
         <meta charset="utf-8" />
         <meta name="robots" content="all">
         <meta name="description" content="Moomba Preloader is a stylish jQuery plugin that allows you to hide content while your page loads."/>
-        <meta name="keywords" content="jquery preloader, jquery preloaders, javascript preloader, css preloader, css3 preloader, html5 preloader, preload content, preload page, moomba plugins, simon corry"/>
+        <meta name="keywords" content="moomba preloader, jquery preloader, jquery plugin, javascript preloader, css preloader, css3 preloader, html5 preloader, preload content, preload page, moomba plugins, simon corry"/>
                 
         <!-- /// VIEWPORT /// -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
