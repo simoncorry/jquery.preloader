@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* /// LOAD /// */
+/* /// MOOMBA PRELOADER /// */
 
 #typeRectangle {
     z-index:9999999;
@@ -39,11 +39,11 @@
     margin-left:-70px;
     margin-top:-2px;
     border-radius:20px;
-    -webkit-transform:translate(-150px,0);
-    -moz-transform:   translate(-150px,0);
-    -ms-transform:    translate(-150px,0);
-    -o-transform:     translate(-150px,0);
-    transform:        translate(-150px,0);
+    -webkit-transform:translate3d(-150px,0,0);
+    -moz-transform:   translate3d(-150px,0,0);
+    -ms-transform:    translate3d(-150px,0,0);
+    -o-transform:     translate3d(-150px,0,0);
+    transform:        translate3d(-150px,0,0);
     -webkit-animation:bar 1s ease-in-out infinite;
     -moz-animation:   bar 1s ease-in-out infinite;
     -o-animation:     bar 1s ease-in-out infinite;
@@ -51,23 +51,23 @@
 }
 
 @-webkit-keyframes bar {
-    from {-webkit-transform:translate(-150px,0);}
-    to   {-webkit-transform:translate(150px,0);}
+    from {-webkit-transform:translate3d(-150px,0,0);}
+    to   {-webkit-transform:translate3d(150px,0,0);}
 }
 
 @-moz-keyframes bar {
-    from {-moz-transform:translate(-150px,0);}
-    to   {-moz-transform:translate(150px,0);}
+    from {-moz-transform:translate3d(-150px,0,0);}
+    to   {-moz-transform:translate3d(150px,0,0);}
 }
 
 @-o-keyframes bar {
-    from {-o-transform:translate(-150px,0);}
-    to   {-o-transform:translate(150px,0);}
+    from {-o-transform:translate3d(-150px,0,0);}
+    to   {-o-transform:translate3d(150px,0,0);}
 }
 
 @keyframes bar {
-    from {transform:translate(-150px,0);}
-    to   {transform:translate(150px,0);}
+    from {transform:translate3d(-150px,0,0);}
+    to   {transform:translate3d(150px,0,0);}
 }
 
 #wrapper {
@@ -88,9 +88,9 @@
 .invisible {visibility:hidden;}
 
 .topinvisible {
-    -webkit-transform:translate(0,-2000px);
-    -moz-transform:   translate(0,-2000px);
-    -ms-transform:    translate(0,-2000px);
-    -o-transform:     translate(0,-2000px);
-    transform:        translate(0,-2000px);
+    -webkit-transform:translate3d(0,-2000px,0);
+    -moz-transform:   translate3d(0,-2000px,0);
+    -ms-transform:    translate3d(0,-2000px,0);
+    -o-transform:     translate3d(0,-2000px,0);
+    transform:        translate3d(0,-2000px,0);
 }
