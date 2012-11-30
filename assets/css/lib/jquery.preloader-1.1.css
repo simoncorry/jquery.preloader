@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* /// MOOMBA PRELOADER /// */
+
+body {display:none;}
+
+#typeRectangle {
+    z-index:9999999;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background:rgb(254,254,254);
+    width:150px; 
+    height:10px;
+    border:10px solid rgb(254,254,254);
+    border-radius:3px;
+    margin-left:-80px;
+    margin-top:-15px;
+    overflow:hidden;   
+    -webkit-box-shadow:0px 0px 4px #ccc;
+    -moz-box-shadow:   0px 0px 4px #ccc;
+    -ms-box-shadow:    0px 0px 4px #ccc;
+    -o-box-shadow:     0px 0px 4px #ccc;
+    box-shadow:        0px 0px 4px #ccc;
+    -webkit-transition:all 1s ease-in-out; 
+    -moz-transition:   all 1s ease-in-out;
+    -ms-transition:    all 1s ease-in-out; 
+    -o-transition:     all 1s ease-in-out;  
+    transition:        all 1s ease-in-out; 
+}
+
+#typeRectangle > .bar {
+    z-index:99999999;
+    position:absolute;
+    top:50%;
+    left:50%;
+    /* Set color to match branding (default 204,102,51) */
+    background:rgb(204,102,51);
+    width:120px; 
+    height:4px;
+    margin-left:-70px;
+    margin-top:-2px;
+    border-radius:20px;
+    -webkit-transform:translate3d(-150px,0,0);
+    -moz-transform:   translate3d(-150px,0,0);
+    -ms-transform:    translate3d(-150px,0,0);
+    -o-transform:     translate3d(-150px,0,0);
+    transform:        translate3d(-150px,0,0);
+    -webkit-animation:bar 1s ease-in-out infinite;
+    -moz-animation:   bar 1s ease-in-out infinite;
+    -o-animation:     bar 1s ease-in-out infinite;
+    animation:        bar 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes bar {
+    from {-webkit-transform:translate3d(-150px,0,0);}
+    to   {-webkit-transform:translate3d(150px,0,0);}
+}
+
+@-moz-keyframes bar {
+    from {-moz-transform:translate3d(-150px,0,0);}
+    to   {-moz-transform:translate3d(150px,0,0);}
+}
+
+@-o-keyframes bar {
+    from {-o-transform:translate3d(-150px,0,0);}
+    to   {-o-transform:translate3d(150px,0,0);}
+}
+
+@keyframes bar {
+    from {transform:translate3d(-150px,0,0);}
+    to   {transform:translate3d(150px,0,0);}
+}
+
+#wrapper {
+    width:100%;
+    height:100%;
+    opacity:0;
+    -webkit-transition:all 1s ease-in-out; 
+    -moz-transition:   all 1s ease-in-out;
+    -ms-transition:    all 1s ease-in-out; 
+    -o-transition:     all 1s ease-in-out;  
+    transition:        all 1s ease-in-out;
+}
+
+/* Visibility */
+
+.show {opacity:1 !important;}
+
+.invisible {visibility:hidden;}
+
+.topinvisible {
+    -webkit-transform:translate3d(0,-2000px,0);
+    -moz-transform:   translate3d(0,-2000px,0);
+    -ms-transform:    translate3d(0,-2000px,0);
+    -o-transform:     translate3d(0,-2000px,0);
+    transform:        translate3d(0,-2000px,0);
+}
