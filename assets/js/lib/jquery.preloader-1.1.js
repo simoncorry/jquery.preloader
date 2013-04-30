@@ -30,7 +30,10 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  * Version 1.1 (October 29th, 2012)
- * - Various bug fixes. 
+ * - Various bug fixes.
+ *
+ * Version 1.1 (April 30th, 2013)
+ * - Fixed bug that prevented content being hidden on ready.  
  *
 */
 
@@ -61,6 +64,7 @@
         // Rectangle
         function typeRectangle() {
           body
+            .css('display','block')
             .wrapInner(wrapper)
             .prepend('<div id="typeRectangle" class="'+target+'"> \ <div class="bar"></div> \ </div>');
           $('#typeRectangle')
@@ -73,6 +77,7 @@
         // Circle
         function typeCircle() {
           body
+            .css('display','block')
             .wrapInner(wrapper)
             .prepend('<div id="typeRectangle" class="'+target+'"> \ <div class="bar"></div> \ </div>');
           $('#typeRectangle')
@@ -89,7 +94,6 @@
         
         // Initialise
         onload = function() {
-          body.css('display','block');
           setTimeout(function() {       
             $('.typeTarget').addClass('topinvisible'),
             $('.typeTarget .bar').addClass('invisible'),
