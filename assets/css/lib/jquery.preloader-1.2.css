@@ -28,7 +28,6 @@ body {
 }
 
 #shroud.active {
-    z-index:999999;
     visibility:visible;
     opacity:1;
 }
@@ -207,14 +206,20 @@ body {
 /* Wrapper */
 
 #wrapper {
+    visibility:hidden;
     width:100%;
     height:100%;
     opacity:0;
+    -webkit-transition:all 1s ease-in-out; 
+    transition:        all 1s ease-in-out; 
 }
 
 /* Visibility */
 
-.show {opacity:1 !important;}
+.show {
+    visibility:visible !important;
+    opacity:1 !important;
+}
 
 .invisible {visibility:hidden;}
 
