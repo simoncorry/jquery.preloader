@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+/* /// MOOMBA PRELOADER /// */
+
+body {
+    display:none;
+    overflow:hidden;
+}
+
+/* Shroud */
+
+#shroud {
+    visibility:hidden;
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgb(225,225,225);
+    width:100%;
+    height:100%;
+    opacity:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:   border-box;
+    box-sizing:        border-box;
+    -webkit-transition:opacity    1s ease-in-out,
+                       visibility 1s ease-in-out;
+    transition:        opacity    1s ease-in-out,
+                       visibility 1s ease-in-out;
+}
+
+#shroud.active {
+    z-index:999999;
+    visibility:visible;
+    opacity:1;
+}
+
+/* Rectangle */
+
+#typeRectangle {
+    z-index:9999999;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background:rgb(254,254,254);
+    width:150px; 
+    height:10px;
+    border:10px solid rgb(254,254,254);
+    border-radius:3px;
+    margin-left:-80px;
+    margin-top:-15px;
+    overflow:hidden;
+    box-shadow:0px 0px 4px #aaa;
+    -webkit-transition:all 1s ease-in-out; 
+    transition:        all 1s ease-in-out; 
+}
+
+#typeRectangle > div.bar {
+    z-index:99999999;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background:rgb(204,102,51);
+    width:120px; 
+    height:4px;
+    margin-left:-70px;
+    margin-top:-2px;
+    border-radius:20px;
+    -webkit-animation:bar 1s ease-in-out infinite;
+    animation:        bar 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes bar {
+    from {-webkit-transform:translate3d(-150px,0,0);}
+    to   {-webkit-transform:translate3d(150px,0,0);}
+}
+
+@keyframes bar {
+    from {transform:translate3d(-150px,0,0);}
+    to   {transform:translate3d(150px,0,0);}
+}
+
+/* Square */
+
+#typeSquare {
+    z-index:9999999;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background:rgb(254,254,254);
+    width:36px;
+    height:36px;
+    margin-left:-20px;
+    margin-top:-20px;
+    box-shadow:0px 0px 4px #aaa;
+    -webkit-transition:all 1s ease-in-out; 
+    transition:        all 1s ease-in-out;
+}
+
+#typeSquare > div.square_1,
+#typeSquare > div.square_2,
+#typeSquare > div.square_3,
+#typeSquare > div.square_4 {
+    position:absolute;
+    width:16px;
+    height:16px;
+    -webkit-animation:0.8s ease-in-out infinite;
+    animation:        0.8s ease-in-out infinite;
+}
+
+#typeSquare > div.square_1 {
+    top:2px;
+    left:2px;
+    background:rgb(40,55,64);
+    -webkit-animation-name:sq_1;
+    animation-name:        sq_1;
+}
+
+@-webkit-keyframes sq_1 {
+    from {opacity:1.0;}
+    25%  {opacity:1.0;}
+    26%  {opacity:0.2;}
+    to   {opacity:0.2;}
+}
+
+@keyframes sq_1 {
+    from {opacity:1.0;}
+    25%  {opacity:1.0;}
+    26%  {opacity:0.2;}
+    to   {opacity:0.2;}
+}
+
+#typeSquare > div.square_2 {
+    top:2px;
+    left:18px;
+    background:rgb(138,178,159);
+    -webkit-animation-name:sq_2;
+    animation-name:        sq_2;
+}
+
+@-webkit-keyframes sq_2 {
+    from {opacity:0.2;}
+    25%  {opacity:0.2;}
+    26%  {opacity:1.0;}
+    50%  {opacity:1.0;}
+    51%  {opacity:0.2;}
+    to   {opacity:0.2;}
+}
+
+@keyframes sq_2 {
+    from {opacity:0.2;}
+    25%  {opacity:0.2;}
+    26%  {opacity:1.0;}
+    50%  {opacity:1.0;}
+    51%  {opacity:0.2;}
+    to   {opacity:0.2;}
+}
+
+#typeSquare > div.square_3 {
+    top:18px;
+    left:2px;
+    background:rgb(191,168,118);
+    -webkit-animation-name:sq_3;
+    animation-name:        sq_3;
+}
+
+@-webkit-keyframes sq_3 {
+    from {opacity:0.2;}
+    25%  {opacity:0.2;}
+    75%  {opacity:0.2;}
+    76%  {opacity:1.0;}
+    to   {opacity:1.0;}
+}
+
+@keyframes sq_3 {
+    from {opacity:0.2;}
+    25%  {opacity:0.2;}
+    75%  {opacity:0.2;}
+    76%  {opacity:1.0;}
+    to   {opacity:1.0;}
+}
+
+#typeSquare > div.square_4 {
+    top:18px;
+    left:18px;
+    background:rgb(89,51,37);
+    -webkit-animation-name:sq_4;
+    animation-name:        sq_4;
+}
+
+@-webkit-keyframes sq_4 {
+    from {opacity:0.2;}
+    50%  {opacity:0.2;}
+    51%  {opacity:1.0;}
+    75%  {opacity:1.0;}
+    76%  {opacity:0.2;}
+    to   {opacity:0.2;}
+}
+
+@keyframes sq_4 {
+    from {opacity:0.2;}
+    50%  {opacity:0.2;}
+    51%  {opacity:1.0;}
+    75%  {opacity:1.0;}
+    76%  {opacity:0.2;}
+    to   {opacity:0.2;}
+}
+
+/* Wrapper */
+
+#wrapper {
+    width:100%;
+    height:100%;
+    opacity:0;
+}
+
+/* Visibility */
+
+.show {opacity:1 !important;}
+
+.invisible {visibility:hidden;}
+
+.topinvisible {
+    -webkit-transform:translate3d(0,-2000px,0);
+    transform:        translate3d(0,-2000px,0);
+}
