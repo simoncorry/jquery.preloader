@@ -5,7 +5,7 @@
  * GITHUB REPO  : https://github.com/simoncorry/jquery.preloader
  * AUTHORED BY  : Simon Corry, http://simoncorry.com
  * VERSION      : 1.2
- * UPDATED      : October 29th, 2012
+ * UPDATED      : May 17th, 2013
  *
  * Moomba Preloader is a plugin for jQuery. Please feel free to email
  * questions or use case examples to hello@simoncorry.com.
